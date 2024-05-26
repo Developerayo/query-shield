@@ -1,5 +1,5 @@
 {
-  "name": "query-safe",
+  "name": "query-shield",
   "version": "1.0.0",
   "description": "Secure parsing and validation for various user input",
   "license": "MIT",
