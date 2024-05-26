@@ -1,0 +1,34 @@
+{
+  "name": "query-safe",
+  "version": "1.0.0",
+  "description": "Secure parsing and validation for various user input",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/developerayo/query-safe"
+  },
+  "type": "module",
+  "main": "index.js",
+  "author": "Shodipo Ayomide <shodipovi@gmail.com>",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": [
+    "security",
+    "parsing",
+    "validation",
+    "sql",
+    "json",
+    "url"
+  ],
+  "dependencies": {
+    "ajv": "^8.6.3",
+    "escape-html": "^1.0.3",
+    "js-sql-parser": "^1.6.0",
+    "sql-parser": "^0.3.0",
+    "sqlstring": "^2.3.3"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0"
+  }
+}
