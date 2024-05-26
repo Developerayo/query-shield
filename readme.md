@@ -1,11 +1,11 @@
-# query-safe
+# query-shield
 
 Secure parsing and validation for various user input queries.
 
 ## install
 
 ```
-npm install query-safe
+npm install query-shield
 ```
 
 ## API

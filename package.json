@@ -1,11 +1,11 @@
 {
   "name": "query-shield",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Secure parsing and validation for various user input",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/developerayo/query-safe"
+    "url": "https://github.com/developerayo/query-shield"
   },
   "type": "module",
   "main": "index.js",
