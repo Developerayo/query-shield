@@ -1,6 +1,7 @@
 import Ajv from 'ajv';
 import SqlString from 'sqlstring';
 import escapeHtml from 'escape-html';
+import { format as sqlFormatter } from 'sql-formatter'; 
 
 const ajv = new Ajv();
 ajv.addFormat('email', {
@@ -14,9 +15,10 @@ export function escapeSQL(query) {
 
 export function isValidSQL(query) {
 	try {
-		const safeQuery = SqlString.format(query);
-		return /SELECT|INSERT|UPDATE|DELETE/.test(safeQuery.toUpperCase());
-	} catch {
+		const formattedQuery = sqlFormatter(query);
+		return /SELECT|INSERT|UPDATE|DELETE/.test(formattedQuery.toUpperCase());
+	} catch (error) {
+		console.error(error);
 		return false;
 	}
 }

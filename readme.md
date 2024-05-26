@@ -30,6 +30,8 @@ Sanitizes a JSON object to remove or escape potentially dangerous content.
 ## Related
 - `sqlstring` - NodeJS lib to safely escape SQL queries.
 
+- `sql-formatter` - Lib to format and validate SQL queries.
+
 - `ajv` - JSON Schema Validator library.
 
 - `escape-html` - Lib to escape HTML entities.
